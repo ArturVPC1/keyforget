@@ -1,0 +1,43 @@
+.key {
+  opacity: 0.2;
+  cursor: pointer;
+}
+
+.keys .forged {
+  opacity: 1;
+}
+
+.keys {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 4px;
+}
+
+.keys .ready {
+  background-color: #fa6401;
+  animation: glowing 3000ms infinite ease-in-out;
+}
+
+@keyframes glowing {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+
+.keys .blue {
+  background-color: blue;
+}
+
+.keys .red {
+  background-color: red;
+}
+
+.keys .green {
+  background-color: green;
+}

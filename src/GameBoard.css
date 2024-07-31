@@ -1,0 +1,35 @@
+.game-board {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.game-board:not(.tab-user) button:focus,
+.game-board:not(.tab-user) input:focus,
+.game-board:not(.tab-user) select:focus,
+.game-board:not(.tab-user) textarea:focus {
+  outline: none;
+}
+
+button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  cursor: pointer;
+  font-size: 8vw;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 800px) {
+  button {
+    font-size: 63.68px;
+  }
+}
+
+button:active {
+  filter: brightness(95%);
+}
+
+.ripples {
+}

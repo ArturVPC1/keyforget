@@ -1,0 +1,33 @@
+.amber {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 4px;
+}
+
+.current-amber {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(255, 193, 77);
+}
+
+.amber-controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 4px;
+}
+
+.amber-controls button {
+  flex: 1;
+  background-color: rgb(255, 193, 77);
+}
+
+.key-cost-controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 4px;
+}
+
+.key-cost-controls button {
+  flex: 1;
+  background-color: rgb(255, 193, 77);
+}

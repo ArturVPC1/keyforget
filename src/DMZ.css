@@ -1,0 +1,15 @@
+.dmz {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1vh;
+  position: relative;
+}
+
+.dmz button {
+  background: pink;
+  border-radius: 50%;
+  height: 7vh;
+  width: 7vh;
+  font-size: 4vh;
+}
