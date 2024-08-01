@@ -17,7 +17,7 @@ function setRandomBackground() {
     const randomIndex = Math.floor(Math.random() * imageFiles.length);
     const randomImage = imageFiles[randomIndex];
     document.body.style.backgroundImage = `url('${randomImage}')`;
-    document.body.style.backgroundSize = '500px 1500px';  // Ajusta o tamanho da imagem para cobrir o fundo
+    document.body.style.backgroundSize = '100%';  // Ajusta o tamanho da imagem para cobrir o fundo
     document.body.style.backgroundPosition = 'center';  // Centraliza a imagem
     document.body.style.backgroundRepeat = 'no-repeat';  // Evita repetição da imagem
 }
@@ -25,6 +25,10 @@ function setRandomBackground() {
 // Escolha uma imagem aleatória ao carregar a página
 window.onload = setRandomBackground;
 
+//CHAT
+// CHAT
+
+// script.js
 
 function increment(counterId) {
     const counter = document.getElementById(counterId);
@@ -63,7 +67,7 @@ function forgeKey(keyId, aemberCounterId) {
     const aemberCounter = document.getElementById(aemberCounterId);
     if (parseInt(aemberCounter.textContent) >= 6) {
         aemberCounter.textContent = parseInt(aemberCounter.textContent) - 6;
-        document.getElementById(keyId).src = `${keyId.split('-')[0]}-key-forged.png`;
+        document.getElementById(keyId).src = keyId.split('-')[0] + '-key-forged.png';
     } else {
         alert("Not enough Aember to forge a key!");
     }
