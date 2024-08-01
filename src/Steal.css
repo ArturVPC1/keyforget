@@ -1,9 +1,0 @@
-.steal {
-  display: flex;
-  flex: 1;
-}
-
-.steal button {
-  flex: 1;
-  background-color: rgb(255, 193, 77);
-}

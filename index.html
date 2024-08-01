@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyforge Counter</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-800 text-white font-sans">
+    <header class="text-center py-4">
+        <img src="logo.png" style="margin-left: 43%;" width="15%" height="15%">
+    </header>
+    <main class="max-w-4xl mx-auto p-4 grid grid-cols-1 lg:grid-cols-2 gap-4">
+        <!-- Player 1 -->
+        <section class="bg-gray-700 p-4 rounded-lg shadow-lg text-center">
+            <h2 class="text-xl font-semibold mb-2">Player 1</h2>
+            <div>
+                <img src="aember.png" alt="Aember" class="inline-block w-6 h-6" style="width: 30%; height: 30%;">
+                <p id="aember-counter-p1" class="text-3xl font-bold inline-block ml-2">0</p>
+            </div>
+            <div class="mt-4">
+                <button onclick="increment('aember-counter-p1')" class="bg-green-500 text-white px-3 py-1 rounded-lg">+1</button>
+                <button onclick="decrement('aember-counter-p1')" class="bg-red-500 text-white px-3 py-1 rounded-lg">-1</button>
+            </div>
+            <div class="mt-4 flex justify-center space-x-2">
+                <img id="red-key-p1" src="red-key-unforged.png" alt="Red Key" class="w-10 h-10 cursor-pointer" onclick="forgeKey('red-key-p1', 'aember-counter-p1')" style="width: 25%; height: 25%;">
+                <img id="blue-key-p1" src="blue-key-unforged.png" alt="Blue Key" class="w-10 h-10 cursor-pointer" onclick="forgeKey('blue-key-p1', 'aember-counter-p1')" style="width: 25%; height: 25%;">
+                <img id="yellow-key-p1" src="yellow-key-unforged.png" alt="Yellow Key" class="w-10 h-10 cursor-pointer" onclick="forgeKey('yellow-key-p1', 'aember-counter-p1')" style="width: 25%; height: 25%;">
+            </div>
+            <div class="mt-4">
+                <h3 class="text-xl font-semibold mb-2">Chains</h3>
+                <p id="chains-counter-p1" class="text-3xl font-bold">0</p>
+                <p id="hand-size-p1" class="text-lg">Hand Size: 6</p>
+                <button onclick="increment('chains-counter-p1')" class="bg-green-500 text-white px-3 py-1 rounded-lg">+1</button>
+                <button onclick="decrement('chains-counter-p1')" class="bg-red-500 text-white px-3 py-1 rounded-lg">-1</button>
+            </div>
+        </section>
+        <!-- Player 2 -->
+        <section class="bg-gray-700 p-4 rounded-lg shadow-lg text-center">
+            <h2 class="text-xl font-semibold mb-2">Player 2</h2>
+            <div>
+                <img src="aember.png" alt="Aember" class="inline-block w-6 h-6" style="width: 30%; height: 30%;">
+                <p id="aember-counter-p2" class="text-3xl font-bold inline-block ml-2">0</p>
+            </div>
+            <div class="mt-4">
+                <button onclick="increment('aember-counter-p2')" class="bg-green-500 text-white px-3 py-1 rounded-lg">+1</button>
+                <button onclick="decrement('aember-counter-p2')" class="bg-red-500 text-white px-3 py-1 rounded-lg">-1</button>
+            </div>
+            <div class="mt-4 flex justify-center space-x-2">
+                <img id="red-key-p2" src="red-key-unforged.png" alt="Red Key" class="w-10 h-10 cursor-pointer" onclick="forgeKey('red-key-p2', 'aember-counter-p2')" style="width: 25%; height: 25%;">
+                <img id="blue-key-p2" src="blue-key-unforged.png" alt="Blue Key" class="w-10 h-10 cursor-pointer" onclick="forgeKey('blue-key-p2', 'aember-counter-p2')" style="width: 25%; height: 25%;">
+                <img id="yellow-key-p2" src="yellow-key-unforged.png" alt="Yellow Key" class="w-10 h-10 cursor-pointer" onclick="forgeKey('yellow-key-p2', 'aember-counter-p2')" style="width: 25%; height: 25%;">
+            </div>
+            <div class="mt-4">
+                <h3 class="text-xl font-semibold mb-2">Chains</h3>
+                <p id="chains-counter-p2" class="text-3xl font-bold">0</p>
+                <p id="hand-size-p2" class="text-lg">Hand Size: 6</p>
+                <button onclick="increment('chains-counter-p2')" class="bg-green-500 text-white px-3 py-1 rounded-lg">+1</button>
+                <button onclick="decrement('chains-counter-p2')" class="bg-red-500 text-white px-3 py-1 rounded-lg">-1</button>
+            </div>
+        </section>
+    </main>
+    <div class="text-center mt-4">
+        <button onclick="confirmReset()" class="bg-blue-500 text-white px-6 py-3 rounded-lg">Reset</button>
+    </div>
+    <br>
+    <p style="margin-left: 45%;">Site por <a href="https://www.linkedin.com/in/arturvpc/">Artur Pacheco!</a></p> 
+    <br>
+
+    <script src="script.js"></script>
+</body>
+</html>
