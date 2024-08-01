@@ -17,7 +17,7 @@ function setRandomBackground() {
     const randomIndex = Math.floor(Math.random() * imageFiles.length);
     const randomImage = imageFiles[randomIndex];
     document.body.style.backgroundImage = `url('${randomImage}')`;
-    document.body.style.backgroundSize = '720px 1080px';  // Ajusta o tamanho da imagem para cobrir o fundo
+    document.body.style.backgroundSize = '500px 1500px';  // Ajusta o tamanho da imagem para cobrir o fundo
     document.body.style.backgroundPosition = 'center';  // Centraliza a imagem
     document.body.style.backgroundRepeat = 'no-repeat';  // Evita repetição da imagem
 }
