@@ -30,28 +30,29 @@
             gap: 0.5rem;
         }
         .key-image {
-            width: 90px;
-            height: 90px;
+            width: 60px;
+            height: 60px;
         }
-        .aember{
-            width: 50px;
-            height: 50px;
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         .w-8{
-            width: 100px;
-            height: 100px;
+            width: 50px;
+            height: 50px;
         }
     </style>
 </head>
 <body class="bg-gray-800 text-white font-sans">
-    <main class="max-w-4xl mx-auto p-4 grid grid-cols-1 lg:grid-cols-2 gap-4">
+    <main class="main-container max-w-4xl mx-auto p-4">
         <br>
-       <!-- <img src="logo.png" alt="logo" style="width: 25%; height: 95%; margin-left: 40%;">  -->
+    <!--<img src="logo.png" alt="logo" style="width: 25%; height: 95%; margin-bottom: 1rem;">-->
         <!-- Player 1 -->
         <section class="bg-gray-700 p-4 rounded-lg shadow-lg text-center counter-section">
             <h2 class="text-xl font-semibold mb-2">Player 1</h2>
             <div class="counter-container">
-                <img class="aember" src="aember.png" alt="Aember" class="w-8 h-8">
+                <img src="aember.png" alt="Aember" class="w-8 h-8">
                 <p id="aember-counter-p1" class="text-3xl font-bold ml-2">0</p>
                 <div class="counter-buttons">
                     <button onclick="increment('aember-counter-p1')" class="bg-green-500 text-white px-2 py-1 rounded-lg">+1</button>
@@ -74,10 +75,10 @@
             <p id="hand-size-p1" class="text-lg mt-2">Hand Size: 6</p>
         </section>
         <!-- Player 2 -->
-        <section class="bg-gray-700 p-4 rounded-lg shadow-lg text-center counter-section">
+        <section class="bg-gray-700 p-4 rounded-lg shadow-lg text-center counter-section mt-4">
             <h2 class="text-xl font-semibold mb-2">Player 2</h2>
             <div class="counter-container">
-                <img class="aember" src="aember.png" alt="Aember" class="w-8 h-8">
+                <img src="aember.png" alt="Aember" class="w-8 h-8">
                 <p id="aember-counter-p2" class="text-3xl font-bold ml-2">0</p>
                 <div class="counter-buttons">
                     <button onclick="increment('aember-counter-p2')" class="bg-green-500 text-white px-2 py-1 rounded-lg">+1</button>
