@@ -28,6 +28,9 @@ window.onload = setRandomBackground;
 //CHAT
 // CHAT
 
+
+
+
 // script.js
 
 function increment(counterId) {
@@ -65,9 +68,12 @@ function resetCounters() {
 
 function forgeKey(keyId, aemberCounterId) {
     const aemberCounter = document.getElementById(aemberCounterId);
-    if (parseInt(aemberCounter.textContent) >= 6) {
+    const key = document.getElementById(keyId);
+    if (key.src.includes('unforged') && parseInt(aemberCounter.textContent) >= 6) {
         aemberCounter.textContent = parseInt(aemberCounter.textContent) - 6;
-        document.getElementById(keyId).src = keyId.split('-')[0] + '-key-forged.png';
+        key.src = keyId.split('-')[0] + '-key-forged.png';
+    } else if (key.src.includes('forged')) {
+        alert("This key is already forged!");
     } else {
         alert("Not enough Aember to forge a key!");
     }
@@ -98,4 +104,10 @@ function updateHandSize(counterId) {
     }
 
     document.getElementById(handSizeId).textContent = `Hand Size: ${handSize}`;
+}
+
+function confirmSinglePlayer() {
+    if (confirm("Are you sure you want to switch to 1-player mode?")) {
+        document.querySelector('.counter-section:nth-of-type(2)').style.display = 'none';
+    }
 }
